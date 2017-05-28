@@ -1,0 +1,16 @@
+﻿<Window x:Class="GenerateTaxNumber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="180.401" Width="284.105">
+    <Grid Margin="0,0,2,-20">
+        <Label Content="Дата народження" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Стать" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="116"/>
+        <ComboBox x:Name="ComboBoxSex" HorizontalAlignment="Left" Margin="156,45,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>чол</ComboBoxItem>
+            <ComboBoxItem>жін</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="TextBoxTN" HorizontalAlignment="Left" Height="58" Margin="10,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" IsEnabled="False"/>
+        <DatePicker x:Name="DatePickerBD" HorizontalAlignment="Left" Margin="156,10,0,0" VerticalAlignment="Top" SelectedDateChanged="DatePickerBD_SelectedDateChanged"/>
+
+    </Grid>
+</Window>
